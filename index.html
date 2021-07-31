@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quizapp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- form  -->
+        <div id="quizForm">
+            <img src="images/logo.jpg" alt="quiz">
+            <div>
+                <label for="name">User name :</label>
+                <input type="text" id="user"><br /> <br />
+                <label for="name">Email :</label>
+                <input type="text" id="email"><br /> <br />
+            </div>
+            <button onclick="submit()">submit</button>
+        </div>
+        <!-- start  -->
+        <button id="start" class="hide" onclick="startQuiz()">Start Quiz</button>
+        <!-- quiz  -->
+        <div id="body">
+
+            <div id="main" class="hide">
+                <div class="header">
+                    <h5 id="firstName"></h5>
+                    <h6 id="userEmail"></h6>
+                </div>
+                <div id="header">
+                    <h6><span>Time left </span><span id= 'minute'>2 </span><span> : </span> <span  id="second">00</span></h6>
+                </div>
+                <div class="img">
+                    <img id="best" src="images/best.jpg" alt="bestOfLuck">
+                    <img id="correct" class="hide" src="images/correct.jpg" alt="bestOfLuck">
+                    <img id="wrong" class="hide" src="images/wrong.jpg" alt="bestOfLuck">
+                </div>
+                <div id="quiz">
+                    <h3 id="question"></h3>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                </div>
+                <br />
+                <button id="next" onclick="nextQuestion()">Next</button>
+                <button class="hide" id="finish" onclick="getResult()">Sumbit</button>
+                <footer id="footer"></footer>
+            </div>
+        </div>
+        <!-- result  -->
+        <div id="result" class="hide">
+            <img id="resultImg" src="images/keep.jpg" alt="Keep it up">
+            <h3 id="points"></h3>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

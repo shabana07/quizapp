@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.main{
+   text-align: center;
+}
+/* FORM  */
+#email{
+    margin-left: 50px;
+}
+input{
+    border-bottom: 2px solid grey;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    text-align: center;
+    font-size: 168x;
+}
+input:focus{
+    outline: none;
+}
+button{
+   padding: 5px;
+   font-size: 16px; 
+   border-radius: 300px;
+    background-color: transparent;
+    width: 50%;
+    font-weight: bold;
+}
+#start{
+    width: 200px;
+    padding: 2px 5px 2px 5px;
+}
+.form{
+    text-align: center;
+}
+h1{
+    text-decoration: underline;
+}
+img{
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+}
+/* result  */
+#result{
+    border-style: solid;
+    border-width: 20px;
+    border-image-source: url(images/border.jpg);
+    border-image-slice: 60 30;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+}
+/* body  */
+.header{
+    padding-top: -50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quest{
+    display: flex;
+}
+#footer{
+    border-top: 2px solid grey;
+    text-align: center;
+}
+#header{
+    border-bottom: 2px solid grey;
+    padding: 0;
+    display: flex;
+}
+#next , #finish{
+    margin-bottom: 10px;
+}
+#main{
+    text-align: center;
+}
+li{
+    border-radius: 50px;
+    list-style-type: none;
+}
+/* quiz  */
+.hide{
+    display: none;
+}
+.correct{
+    background-color: green;
+    color: #ffffff;
+}
+.wrong{
+    background-color: red;
+    color: #ffffff;
+}
+.disabled{
+    pointer-events: none;
+}
